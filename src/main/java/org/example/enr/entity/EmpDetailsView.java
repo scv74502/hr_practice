@@ -6,6 +6,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 import org.hibernate.annotations.Immutable;
 import org.hibernate.annotations.Type;
 
@@ -18,6 +19,7 @@ import java.math.BigDecimal;
 @Setter
 @Entity
 @Immutable
+@ToString
 @Table(name = "emp_details_view")
 public class EmpDetailsView {
     @Id

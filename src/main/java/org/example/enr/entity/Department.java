@@ -11,7 +11,7 @@ import lombok.Setter;
 @Table(name = "departments")
 public class Department {
     @Id
-    @Column(name = "department_id", nullable = false)
+    @Column(columnDefinition = "BIGINT", name = "department_id", nullable = false)
     private Integer id;
 
     @Column(name = "department_name", nullable = false, length = 30)
